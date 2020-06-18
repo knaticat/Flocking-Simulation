@@ -15,4 +15,4 @@ This Simulation is based upon Craig Reynolds "Boid" algorithm which simulates th
 # Inspiration
 The Coding Train flocking simulation challenge-Daniel Shiffman
 
-**Live Demo**[Boid Algorithm](https://knaticat.github.io/Flocking-Simulation/)
+**Live Demo**: [Boid Algorithm](https://knaticat.github.io/Flocking-Simulation/)
