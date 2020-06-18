@@ -1,0 +1,46 @@
+h1{
+  text-align: center;
+  padding-top: 5px;
+  font-family: sans-serif,serif;
+  font-size: 25px;
+  color: #f0f0f0;
+  height: 50px;
+}
+body{
+  background-color: black;
+}
+p{
+  font-family: sans-serif,serif;
+  color: #f0f0f0;
+}
+span,li,ul{
+  font-family: sans-serif,serif;
+  color: #f0f0f0;
+}
+a{
+  font-family: sans-serif,serif;
+  color: 'green';
+}
+.horizontal{
+    float: left;
+}
+
+.horizontal  *{
+    display: inline-block;
+    margin-left: 2px;
+}
+#intro{
+  float:left;
+  clear:left;
+  padding-left: 10px;
+}
+
+#canvas{
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 700px){
+  .horizontal *{
+    display:flow-root;
+  }
+}

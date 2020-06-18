@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> </meta>-->
+  <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+  <title>Boid algorithm</title>
+  <link href="StyleSheet.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="boid.js"></script>
+  <script src="birds.js"></script>
+  <script src="quadtree.js"></script>
+  <script src="sketch.js"></script>
+
+</head>
+
+<body>
+  <h1>Flocking Simulation</h1>
+  <div id="canvas"></div>
+  <div class="horizontal">
+      <p>Peripheral Vision:<span id="vi_val"></span></p>
+      <div id="visionpar"></div>
+      <p>Alignment:<span id="ali_val"></span></p>
+      <div id="alignpar"></div>
+      <p>Cohesion:<span id="coh_val"></span></p>
+      <div id="cohesionpar"></div>
+      <p>Separation:<span id="sep_val"></span></p>
+      <div id="separationpar"></div>
+      <p>Flockmate Radius:<span id="flock_val"></span></p>
+      <div id="flockrad"></div>
+      <div id="birdpar"></div>
+      <div id="fishpar"></div>
+  </div>
+  <div id="intro">
+    <p>This Simulation is based upon Craig Reynolds "Boid" algorithm which simulates the flocking behavoiur
+      of birds. Individual boid objects follow four simple steering rules:</p>
+      <ul>
+        <li>Alignment: head towards average direction of nearby boids.</li>
+        <li>Cohesion: steer towards the average location of nearby boids.</li>
+        <li>Separation: Avoid Colision with nearby boids.</li>
+        <li>Flee: Run away from predators.</li>
+      </ul>
+    <p> The weights of each steering force can be manipulated by sliders. Boids can also see other
+      neighbouring boids which are within their 'Peripheral Vision' and align towards them, this is responsible
+      for the 'V' shape observed in bird flocks. Click on the canvas to add Boid objects.</p>
+    <p>Further Reading:</p>
+    <ul>
+        <li><a href="http://www.red3d.com/cwr/boids/" target="_blank">Craig Reynolds' Reference</a></li>
+        <li><a href="https://thecodingtrain.com/CodingChallenges/124-flocking-boids.html" target="_blank">
+            More Boids
+        </a></li>
+        <li><a href="https://www.youtube.com/watch?v=4LWmRuB-uNU" target="_blank"> Flocking Boids-Smarter EveryDay</a></li>
+        <li>This simulation is Quadtree Optimized: <a href="https://en.wikipedia.org/wiki/Quadtree" target="_blank">QuadTree</a></li>
+    </ul>
+    <p>You can find the code here.</p>
+  </div>
+</body>
+
+</html>
